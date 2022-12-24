@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import s from './Form.module.css';
+
 import { nanoid } from 'nanoid';
 
 class Form extends Component {
