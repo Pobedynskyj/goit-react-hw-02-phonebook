@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import { ContactsForm } from './Contacts/Contacts';
 import Form from './Form';
-import s from '../index.css';
 
 // export const App = () => {
 export class App extends Component {
@@ -24,8 +23,8 @@ export class App extends Component {
   render() {
     console.log(this.state);
     return (
-      <div className={s.mainBody}>
-        <h1 className={s.mainTitle}>Phonebook</h1>
+      <div>
+        <h1>Phonebook</h1>
         <Form changeAppState={this.handleSubmit} />
         <ContactsForm
           contacts={this.state.contacts}

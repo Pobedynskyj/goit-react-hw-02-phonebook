@@ -1,17 +1,22 @@
 import React from 'react';
+import s from './Contacts.module.css';
 
 export const ContactsForm = ({ contacts, onDelete }) => {
   return (
     <>
       {' '}
       {contacts.length !== 0 && (
-        <ul>
+        <ul className={s.contList}>
           {contacts.map(({ name, tel, id }) => (
-            <li key={name}>
-              <p>
+            <li className={s.contItem} key={name}>
+              <p className={s.contInfo}>
                 {name}: {tel}
               </p>
-              <button type="button" onClick={() => onDelete(id)}>
+              <button
+                className={s.contBtn}
+                type="button"
+                onClick={() => onDelete(id)}
+              >
                 Delete
               </button>
             </li>

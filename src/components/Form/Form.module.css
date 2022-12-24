@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+}
+
+.formInput {
+  margin-right: 20px;
+  height: 20px;
+  border: 2px solid teal;
+  border-radius: 3px;
+}
+
+.formBtn {
+  background-color: teal;
+  border: none;
+  border-radius: 3px;
+  color: aliceblue;
+}
+
+.formBtn:hover,
+.formBtn:focus {
+  background-color: green;
+}
