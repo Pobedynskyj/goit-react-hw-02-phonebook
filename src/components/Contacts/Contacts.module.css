@@ -6,9 +6,9 @@
 }
 
 .contItem {
-  border: 2px solid teal;
+  border: 2px solid rgb(142, 220, 220);
   width: 425px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .contItem:not(:last-child) {

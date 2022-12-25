@@ -5,18 +5,22 @@
 .formInput {
   margin-right: 20px;
   height: 20px;
-  border: 2px solid teal;
-  border-radius: 3px;
+  border: 2px solid rgb(142, 220, 220);
+  border-radius: 10px;
 }
 
 .formBtn {
-  background-color: teal;
+  background-color: rgb(142, 220, 220);
   border: none;
-  border-radius: 3px;
-  color: aliceblue;
+  border-radius: 10px;
+  color: rgb(145, 148, 150);
 }
 
 .formBtn:hover,
 .formBtn:focus {
-  background-color: green;
+  background-color: rgb(107, 203, 107);
+}
+
+.labelTitle {
+  margin: auto;
 }

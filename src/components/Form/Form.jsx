@@ -30,6 +30,7 @@ class Form extends Component {
     return (
       <form className={s.form} onSubmit={this.handleSubmitForm}>
         <label>
+          <p className={s.labelTitle}>Name</p>
           <input
             className={s.formInput}
             onChange={this.handleChange}
@@ -38,15 +39,16 @@ class Form extends Component {
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
-          />
+          />{' '}
         </label>
         <label>
+          <p className={s.labelTitle}>Phone</p>
           <input
             className={s.formInput}
             type="number"
             name="tel"
             onChange={this.handleChange}
-          />
+          />{' '}
         </label>
         <button className={s.formBtn} type="submit">
           Add contact
