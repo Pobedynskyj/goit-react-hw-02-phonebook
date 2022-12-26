@@ -21,10 +21,11 @@ export class App extends Component {
     this.setState({ contacts: [...contacts, object] });
 
     const checkContact = contacts.find(
-      contact => contact.name.toLowerCase() === this.name.toLowerCase()
+      contact => contact.name.toLowerCase() === object.name.toLowerCase()
     );
+    console.log(checkContact);
     if (checkContact) {
-      alert(`${this.name} is already in contacts `);
+      alert(`${object.name} is already in contacts `);
     }
 
     this.setState(prevState => ({
