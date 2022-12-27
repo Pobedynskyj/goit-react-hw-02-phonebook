@@ -28,9 +28,9 @@ export class App extends Component {
       alert(`${object.name} is already in contacts `);
     }
 
-    this.setState(prevState => ({
-      contacts: [this.contact, ...prevState.contacts],
-    }));
+    // this.setState(prevState => ({
+    //   contacts: [this.contact, ...prevState.contacts],
+    // }));
   };
 
   handleDelete = id => {
@@ -45,7 +45,7 @@ export class App extends Component {
     });
   };
 
-  visibileContacts = id => {
+  visibileContacts = () => {
     const { contacts, filter } = this.state;
     const normalize = filter.toLowerCase();
     return contacts.filter(contact =>
